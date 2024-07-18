@@ -580,10 +580,14 @@ model = AutoModelForSequenceClassification. \
 <img src="./rpimg/image copy 5.png" width="700">
 - Quá trình thử nghiệm mô hình: 
 <img src="./rpimg/image copy 6.png" width="700">
+
 ## 4. Prompt Engineering với Meta-Llama-3-8B-Instruct
+
 ### 4.1. Giới thiệu mô hình
+
 - Mô hình này một mô hình ngôn ngữ lớn với khoảng 8 tỷ tham số. Mô hình thuộc họ Encoder-decoder models, được ra mắt vào ngày 18-04-2024 được sử dụng chủ yếu cho tác vụ Text Generation. 
 - Mô hình sẽ được áp dùng vào bài toán bằng cách đưa bài luận và các hướng dẫn chấm điểm vào mô hình, sau đó yêu cầu mô hình sinh ra một đoạn văn bản chấm điểm cho bài luận đó. Bởi vì các mô hình ngôn ngữ lớn như Meta-Llama-3-8B-Instruct đã được huấn luyện trên một lượng lớn dữ liệu nên chúng có khả năng phần nào cảm nhận được gần đúng điểm số của bài luận nhưng vì không được huấn luyện trên tập dữ liệu này nên kết quả trả về sẽ sai lệch khá nhiều.
+
 ### 4.2. Các bước thực hiện
 
 **Khởi tạo pipeline**:
